@@ -1,0 +1,4 @@
+banana,  2000
+apple,  1500
+
+grape,  3000
