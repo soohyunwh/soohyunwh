@@ -39,13 +39,13 @@ public class Student2 {
         ArrayList<Student>students = new ArrayList<>();
 
         System.out.println("학생 수를 입력하세요");
-        int gkrtodtn = 0;
+        int count = 0;
 
         while (true){
             try{
-                gkrtodtn = scanner.nextInt();
+                count = scanner.nextInt();
                 scanner.nextLine(); // 입력 버퍼 비우기
-                if (gkrtodtn <= 0) {
+                if (count <= 0) {
                     System.out.println("학생수는 1명 이상이여야합니다");
                     System.out.println("다시 입력해주세요");
                 }else{
@@ -57,7 +57,7 @@ public class Student2 {
             }
         }
 
-        for (int i=1; i<=gkrtodtn; i++){
+        for (int i=1; i<=count; i++){
             System.out.println(i+"번 학생의 이름을 입력하세요");
             String name = scanner.nextLine(); // 이름 입력받기
 
@@ -82,7 +82,7 @@ public class Student2 {
         }
         System.out.println("\n학생 점수 및 학점");
         for (Student student : students){ //리스트에 있는 모든 학생 정보 출력
-            System.out.println("이름: "+student.name+ "/점수: "+student.score+ ", 학점: "+student.grade);
+            System.out.println("이름: "+student.name+ "/ 점수: "+student.score+ ", 학점: "+student.grade);
 
         }
     }
